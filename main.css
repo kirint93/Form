@@ -1,0 +1,115 @@
+h1 {
+  margin-left: 600px;
+}
+
+.contact-form {
+  padding: 3px;
+  margin-top: 30px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 400px;
+}
+
+.contact-form .input-fields {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 80%;
+  margin-left: 70px;
+}
+
+.contact-form .input-fields input {
+  height: 20px;
+}
+
+.contact-form .content {
+  width: 100%;
+}
+
+.contact-form .content textarea {
+  margin-left: 70px;
+  margin-top: 20px;
+  background-color: transparent;
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px;
+  color: grey;
+  width: 79%;
+}
+
+.contact-form .content textarea::-webkit-input-placeholder {
+  color: inherit;
+}
+
+.contact-form .content textarea:-ms-input-placeholder {
+  color: inherit;
+}
+
+.contact-form .content textarea::-ms-input-placeholder {
+  color: inherit;
+}
+
+.contact-form .content textarea::placeholder {
+  color: inherit;
+}
+
+.contact-form .content textarea :required {
+  border-color: #f5f5f5;
+}
+
+.contact-form .content textarea {
+  height: 210px;
+}
+
+.contact-form .content .button {
+  width: 10%;
+  height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 450px;
+  background-color: yellow;
+  border: 2px solid grey;
+  border-radius: 5px;
+  color: #000;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 420px) {
+  h1 {
+    margin-left: 180px;
+  }
+  .contact-form {
+    width: 375px;
+  }
+  .contact-form .input-fields {
+    margin-left: 20px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .contact-form .content {
+    height: 30%;
+  }
+  .contact-form .content textarea {
+    margin-left: 30px;
+    height: 50px;
+  }
+  .contact-form .content .button {
+    height: 20px;
+    margin-left: 150px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+/*# sourceMappingURL=main.css.map */
